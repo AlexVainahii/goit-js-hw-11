@@ -1,0 +1,28 @@
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(150deg, blue, yellow);
+  height: 100px;
+}
+.search__form {
+  position: relative;
+  width: 400px;
+}
+.search__input {
+  border-radius: 50px;
+  width: 400px;
+  height: 40px;
+  border: none;
+}
+
+.search__btn {
+  position: absolute;
+  border: none;
+  right: 8px;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: linear-gradient(150deg, blue, yellow);
+}
