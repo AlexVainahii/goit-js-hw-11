@@ -3,7 +3,7 @@ import Notiflix from 'notiflix';
 import { createMarkup } from './js/createMarkup';
 import { refs } from './js/refs';
 
-axios.defaults.baseURL = 'https://pixabay.com/api';
+axios.defaults.baseURL = 'https://pixabay.com/api/';
 
 export class PixabayApi {
   #params = {
