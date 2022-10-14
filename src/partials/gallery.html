@@ -1,9 +1,19 @@
 <header class="search">
-  <form class="search__form">
-    <input type="text" class="search__input" />
-    <button type="submit" class="search__btn"></button>
+  <div class="container">
+  <form class="search__form" id="search-form">
+    <input
+      type="text"
+      name="searchQuery"
+      autocomplete="off"
+      placeholder="Search images..."
+      class="search__input"
+    />
+    <button type="submit" class="search__btn">&#128269</button>
   </form>
+</div>
 </header>
 <section>
-  <div class="gallery"><i class="fas fa-search"></i></div>
+  <div class="container">
+  <div class="gallery"></div>
+</div>
 </section>

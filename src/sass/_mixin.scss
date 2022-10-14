@@ -1,0 +1,11 @@
+@mixin gridFlex ( $num: 3, $ml:30px) {
+    flex-basis: calc(100%/ $num - $ml);
+    margin-left: $ml;
+  }
+
+  @mixin first_item_gridFlex ( $type: flex, $wr:wrap ,$ml:-30px) {
+    display: $type;
+    flex-wrap: $wr;
+    margin-left: $ml;
+
+  }

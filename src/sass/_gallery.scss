@@ -1,0 +1,31 @@
+.container{
+    width: 1170px ;
+margin: 0 auto;
+}
+.gallery{
+    display: flex;
+    @include first_item_gridFlex ();
+ width: 1200;
+}
+img{
+    object-fit: cover;
+    width: 350px;
+}
+.photo-card{
+    width: 350px;
+@include gridFlex(3);
+}
+section{
+    margin: 0 auto;
+}
+.info{
+     width: 350px;
+     @include first_item_gridFlex ();
+     flex-wrap: nowrap;
+}
+.info-item{
+   @include gridFlex(4);
+  text-align: center;
+  
+   
+}
