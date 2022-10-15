@@ -8,9 +8,16 @@
 
 .search > .container {
   display: flex;
+  flex-direction: column;
+  height: 100%;
+  // margin: 0 auto;
+  text-align: center;
+  justify-content: center;
 }
 .search__form {
+  position: relative;
   width: 400px;
+  margin: 0 auto;
 }
 .search__input {
   border-radius: 50px;
