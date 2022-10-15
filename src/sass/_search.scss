@@ -1,15 +1,15 @@
 .search {
-  
+  z-index: 1;
   background-image: linear-gradient(150deg, blue, yellow);
   height: 100px;
+  width: 100%;
+  position: fixed;
 }
-.search>.container{ 
-  height: 100px;
+
+.search > .container {
   display: flex;
-  justify-content: center;
-  align-items: center;}
+}
 .search__form {
-  position: relative;
   width: 400px;
 }
 .search__input {

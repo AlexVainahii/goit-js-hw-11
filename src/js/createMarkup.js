@@ -1,8 +1,16 @@
 export function createMarkup(photos) {
-   console.log(photos);
-    return photos.hits
-      .map(({ webformatURL, largeImageURL,tags,likes,views,comments,downloads }) => {
-        return  `<div class="photo-card">
+  return photos.hits
+    .map(
+      ({
+        webformatURL,
+        largeImageURL,
+        tags,
+        likes,
+        views,
+        comments,
+        downloads,
+      }) => {
+        return `<div class="photo-card">
         <img src="${webformatURL}" alt="${tags}" width="350px" height="250px" data-source="${largeImageURL}" loading="lazy" />
         <div class="info">
           <p class="info-item">
@@ -23,16 +31,7 @@ export function createMarkup(photos) {
           </p>
         </div>
       </div>`;
-      })
-      .join('');
-  }
-
-  
-    
-    
-  
-
-
-
-
-  
+      }
+    )
+    .join('');
+}
