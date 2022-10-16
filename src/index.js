@@ -13,7 +13,8 @@ const options = {
   threshold: 1.0,
 };
 const Lightbox = new SimpleLightbox('.gallery a', {
-  captionsData: 'alt',
+  loadingTimeout: 0,
+  showCaptions: true,
 });
 const io = new IntersectionObserver(nextPage, options);
 export class PixabayApi {
