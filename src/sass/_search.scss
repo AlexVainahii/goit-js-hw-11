@@ -19,7 +19,18 @@
   width: 400px;
   margin: 0 auto;
 }
+.spinner-border {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.not_visible {
+  display: none;
+}
 .search__input {
+  font-weight: 500;
+  font-size: large;
+  padding-left: 15px;
   border-radius: 50px;
   width: 400px;
   height: 40px;
