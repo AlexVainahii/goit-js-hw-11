@@ -1,11 +1,9 @@
 import axios from 'axios';
-import bootstrap from 'bootstrap';
 import Notiflix from 'notiflix';
 import { createMarkup } from './js/createMarkup';
 import { refs } from './js/refs';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-divRef = document.querySelector('.spinner-border');
 axios.defaults.baseURL = 'https://pixabay.com/api/';
 const options = {
   root: null,
@@ -66,16 +64,19 @@ export class PixabayApi {
 const myGallery = new PixabayApi();
 
 async function get() {
+  console.log('event');
   refs.form.addEventListener('click', searchSubmit);
+  console.log('event');
 }
 async function searchSubmit(event) {
-  divRef.classList.toggle('visually-hidden');
-  clearPage();
+  console.log('event');
   event.preventDefault();
+  clearPage();
+
   const inputSearch = refs.input.value.trim().toLowerCase();
   if (!inputSearch) {
     Notiflix.Notify.failure('Enter data for search!');
-    divRef.classList.toggle('visually-hidden');
+
     return;
   }
   myGallery.search = inputSearch;
