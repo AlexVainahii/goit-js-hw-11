@@ -2,6 +2,9 @@
   width: 1170px;
   margin: 0 auto;
 }
+a {
+  width: 100%;
+}
 section {
   position: relative;
   top: 115px;
@@ -18,7 +21,6 @@ img {
   width: 350px;
 }
 .photo-card {
-  width: 350px;
   height: 350px;
   margin-bottom: 15px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -26,6 +28,7 @@ img {
   text-align: center;
   background-color: rgb(217, 214, 214);
   @include gridFlex(3);
+  width: 350px;
 }
 
 .info {
