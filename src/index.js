@@ -64,12 +64,9 @@ export class PixabayApi {
 const myGallery = new PixabayApi();
 
 async function get() {
-  console.log('event');
-  refs.form.addEventListener('click', searchSubmit);
-  console.log('event');
+  refs.btn.addEventListener('click', searchSubmit);
 }
 async function searchSubmit(event) {
-  console.log('event');
   event.preventDefault();
   clearPage();
 
@@ -87,7 +84,6 @@ async function searchSubmit(event) {
     Notiflix.Notify.success(`Hooray! We found ${totalHits} images.`);
     const markup = createMarkup(hits);
     refs.list.insertAdjacentHTML('beforeend', markup);
-    divRef.classList.toggle('visually-hidden');
     const { height: cardHeight } = document
       .querySelector('.gallery')
       .firstElementChild.getBoundingClientRect();
